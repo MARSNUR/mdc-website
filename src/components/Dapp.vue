@@ -109,7 +109,12 @@ const { t } = useI18n({ useScope: "global" });
       <div class="col-lg-6 col-md-6 col-sm-12">
         <h2 class="text-center mb-30">{{ $t("unlockschedule_title") }}</h2>
         <div class="token-allocation">
-          <div id="chart_div" style="width: 95%; height: 300px"></div>
+          <GChart
+              style="width: 95%; height: 300px"
+              type="SteppedAreaChart"
+              :data="chartData"
+              :options="chartOptions"
+          />
           <!-- <img src="../assets/img/core-img/sale.png" class="center-block" alt=""> -->
         </div>
       </div>
@@ -118,10 +123,12 @@ const { t } = useI18n({ useScope: "global" });
           {{ $t("initialtokendistrbution_title") }}
         </h2>
         <div class="token-allocation">
-          <div
-            id="myChart"
-            style="width: 95%; max-width: 700px; height: 300px"
-          ></div>
+          <GChart
+              style="width: 95%; max-width: 700px; height: 300px"
+              type="PieChart"
+              :data="pieChartData"
+              :options="pieChartOptions"
+          />
         </div>
       </div>
     </div>
@@ -132,8 +139,57 @@ const { t } = useI18n({ useScope: "global" });
 
 
 <script>
+import { GChart } from 'vue-google-charts'
+
 export default {
   name: "Dapp",
+  components: {
+    GChart
+  },
+
+  data () {
+    return {
+      // Array will be automatically processed with visualization.arrayToDataTable function
+      chartData: [
+        ['Months',  'Team', 'Seed Round', 'Series A', 'Public Sale', 'Foundation', 'Marketing', 'Core Contributors', 'Ecosystem', 'Advisors'],
+        ['0',  0,        0,        0,         0,           0,         40709550,  0,        0,         0],
+        ['6',  5657650 , 14600000, 28230600,   42345900,   27984400,  63972150,  0,        27345900,  500000],
+        ['12', 16972950, 43800000, 70576500,   70576500,   55968800,  81419100,  1500000,  45576500,  1500000],
+        ['24', 28288250, 87600000, 141153000,  98807100,   83953200,  98866050,  3000000,  72922400,  3000000],
+        ['36', 50918850, 146000000, 141153000, 141153000,  111937600, 116313000, 5000000,  109383600, 5000000],
+        ['48', 73549450, 146000000, 141153000, 141153000,  139922000, 116313000, 7000000,  136729500, 7500000],
+        ['60', 90522400, 146000000, 141153000, 141153000,  139922000, 116313000, 8500000,  154960100, 10000000],
+        ['72', 113153000, 146000000, 141153000,141153000,  139922000, 116313000, 10000000, 182306000, 10000000],
+      ],
+      chartOptions: {
+        chart: {
+          title: '',
+        },
+        vAxis: {title: ''},
+        isStacked: true,
+        colors:['#00BFFF','#87CEFA', '#1E90FF', '#4169E1', '#0000FF', '#4682B4']
+      },
+
+      pieChartData: [
+        ['',''],
+        ['Team',              113153000],
+        ['Seed Round',        146000000],
+        ['Series A',          141153000],
+        ['Core Contributors', 10000000],
+        ['Public Sale',       141153000],
+        ['Ecosystem',         182306000],
+        ['Foundation',        139922000],
+        ['Marketing',         116313000],
+        [' Advisors',         10000000]
+      ],
+      pieChartOptions: {
+        chart: {
+          title: '',
+        },
+        colors:['#00BFFF','#87CEFA', '#1E90FF', '#4169E1', '#0000FF', '#4682B4']
+      }
+    }
+  }
 };
 </script>
 
