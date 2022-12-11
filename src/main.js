@@ -10,7 +10,8 @@ import "./assets/css/style.css";
 
 import { Languages } from './i18n';
 import { defaultLocale } from './i18n';
-import {createI18n, useI18n} from 'vue-i18n'
+
+import { createI18n, useI18n } from 'vue-i18n';
 
 const messages = Object.assign(Languages)
 const i18n = createI18n({

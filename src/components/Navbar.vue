@@ -60,6 +60,4 @@ const { t } = useI18n({ useScope: "global" });
 export default {
   name: "Navbar",
 };
-
-
 </script>

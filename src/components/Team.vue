@@ -16,7 +16,7 @@ const { t } = useI18n({ useScope: "global" });
               {{ $t("ourexperts_title") }}
             </h2>
             <p class="fadeInUp" data-wow-delay="0.4s">
-               {{ $t("ourexperts_decs") }}
+              {{ $t("ourexperts_decs") }}
             </p>
           </div>
         </div>
@@ -28,7 +28,11 @@ const { t } = useI18n({ useScope: "global" });
           <div class="single-team-member fadeInUp" data-wow-delay="0.2s">
             <!-- Image -->
             <div class="team-member-thumb">
-              <img src="../assets/img/team-img/07.png" class="center-block" alt="" />
+              <img
+                src="../assets/img/team-img/07.png"
+                class="center-block"
+                alt=""
+              />
             </div>
             <!-- Team Info -->
             <div class="team-info">
@@ -50,7 +54,11 @@ const { t } = useI18n({ useScope: "global" });
           <div class="single-team-member fadeInUp" data-wow-delay="0.3s">
             <!-- Image -->
             <div class="team-member-thumb">
-              <img src="../assets/img/team-img/06.png" class="center-block" alt="" />
+              <img
+                src="../assets/img/team-img/06.png"
+                class="center-block"
+                alt=""
+              />
             </div>
             <!-- Team Info -->
             <div class="team-info">
@@ -74,7 +82,11 @@ const { t } = useI18n({ useScope: "global" });
           <div class="single-team-member fadeInUp" data-wow-delay="0.4s">
             <!-- Image -->
             <div class="team-member-thumb">
-              <img src="../assets/img/team-img/08.png" class="center-block" alt="" />
+              <img
+                src="../assets/img/team-img/08.png"
+                class="center-block"
+                alt=""
+              />
             </div>
             <!-- Team Info -->
             <div class="team-info">
@@ -100,7 +112,11 @@ const { t } = useI18n({ useScope: "global" });
           <div class="single-team-member fadeInUp" data-wow-delay="0.5s">
             <!-- Image -->
             <div class="team-member-thumb">
-              <img src="../assets/img/team-img/05.png" class="center-block" alt="" />
+              <img
+                src="../assets/img/team-img/05.png"
+                class="center-block"
+                alt=""
+              />
             </div>
             <!-- Team Info -->
             <div class="team-info">
@@ -123,7 +139,11 @@ const { t } = useI18n({ useScope: "global" });
           <div class="single-team-member fadeInUp" data-wow-delay="0.5s">
             <!-- Image -->
             <div class="team-member-thumb">
-              <img src="../assets/img/team-img/04.png" class="center-block" alt="" />
+              <img
+                src="../assets/img/team-img/04.png"
+                class="center-block"
+                alt=""
+              />
             </div>
             <!-- Team Info -->
             <div class="team-info">
@@ -165,12 +185,16 @@ const { t } = useI18n({ useScope: "global" });
           <div class="single-team-member fadeInUp" data-wow-delay="0.5s">
             <!-- Image -->
             <div class="team-member-thumb">
-              <img src="../assets/img/team-img/01.png" class="center-block" alt="" />
+              <img
+                src="../assets/img/team-img/01.png"
+                class="center-block"
+                alt=""
+              />
             </div>
             <!-- Team Info -->
             <div class="team-info">
-              <h5> {{ $t("advisors_amit_title") }}</h5>
-              <p> {{ $t("advisors_amit_desc") }}</p>
+              <h5>{{ $t("advisors_amit_title") }}</h5>
+              <p>{{ $t("advisors_amit_desc") }}</p>
             </div>
             <!-- Icon -->
             <div class="team-social-icon">
@@ -186,7 +210,11 @@ const { t } = useI18n({ useScope: "global" });
           <div class="single-team-member fadeInUp" data-wow-delay="0.5s">
             <!-- Image -->
             <div class="team-member-thumb">
-              <img src="../assets/img/team-img/03.png" class="center-block" alt="" />
+              <img
+                src="../assets/img/team-img/03.png"
+                class="center-block"
+                alt=""
+              />
             </div>
             <!-- Team Info -->
             <div class="team-info">
@@ -208,7 +236,11 @@ const { t } = useI18n({ useScope: "global" });
           <div class="single-team-member fadeInUp" data-wow-delay="0.5s">
             <!-- Image -->
             <div class="team-member-thumb">
-              <img src="../assets/img/team-img/02.png" class="center-block" alt="" />
+              <img
+                src="../assets/img/team-img/02.png"
+                class="center-block"
+                alt=""
+              />
             </div>
             <!-- Team Info -->
             <div class="team-info">
@@ -228,40 +260,56 @@ const { t } = useI18n({ useScope: "global" });
   </section>
   <!-- ##### Advisors Area End ##### -->
 
-        <!-- Partners Area Start -->
-    <div class="partner-powerful">
-        <div class="container">
-            <div class="section-heading text-center">
-                <div class="mb-15 section-padding-100-0 justify-content-center fadeInUp" data-wow-delay="0.2s">
-                    <span class="gradient-text blue"></span>
-                </div>
-                <h2 class="fadeInUp" data-wow-delay="0.3s">Our powerful Partners</h2>
-                <p class="fadeInUp" data-wow-delay="0.4s">Our partners contribute more than money. Their ideas, in-kind support and more are helping to build better products. </p>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-15">
-                    <div class="team-member ">
-                        <div class="team-img">
-                            <a target="_blank" href="https://www.microsoft.com/en-us/startups?rtc=1">
-                                <img class="img-responsive center-block" src="../assets/img/team-img/09.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-15">
-                    <div class="team-member ">
-                        <div class="team-img">
-                            <a href="https://astanahub.com/en/l/techpreneurs" target="_blank">
-                                <img class="img-responsive center-block" src="../assets/img/team-img/10.png" alt="">
-                            </a>  
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Partners Area Start -->
+  <div class="partner-powerful">
+    <div class="container">
+      <div class="section-heading text-center">
+        <div
+          class="mb-15 section-padding-100-0 justify-content-center fadeInUp"
+          data-wow-delay="0.2s"
+        >
+          <span class="gradient-text blue"></span>
         </div>
+        <h2 class="fadeInUp" data-wow-delay="0.3s">Our powerful Partners</h2>
+        <p class="fadeInUp" data-wow-delay="0.4s">
+          Our partners contribute more than money. Their ideas, in-kind support
+          and more are helping to build better products.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-15">
+          <div class="team-member">
+            <div class="team-img">
+              <a
+                target="_blank"
+                href="https://www.microsoft.com/en-us/startups?rtc=1"
+              >
+                <img
+                  class="img-responsive center-block"
+                  src="../assets/img/team-img/09.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-15">
+          <div class="team-member">
+            <div class="team-img">
+              <a href="https://astanahub.com/en/l/techpreneurs" target="_blank">
+                <img
+                  class="img-responsive center-block"
+                  src="../assets/img/team-img/10.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Partners Area End -->
-
+  </div>
+  <!-- Partners Area End -->
   <!-- ##### Blog Area Start ##### -->
   <section class="our_blog_area clearfix section-padding-100-0" id="blog">
     <div class="container">
