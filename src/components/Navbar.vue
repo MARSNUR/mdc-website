@@ -10,8 +10,7 @@ const { t } = useI18n({ useScope: "global" });
         <!-- Classy Menu -->
         <!-- <nav class="classy-navbar justify-content-between" id="dreamNav"> -->
             <!-- Nav Start -->
-            <div class="classynav">
-              <ul id="nav">
+              <ul class="nav navbar-nav navbar-right" id="nav">
                 <li>
                   <a href="#home" lang="en">
                     {{ $t("menu_home") }}
@@ -42,22 +41,23 @@ const { t } = useI18n({ useScope: "global" });
                     {{ $t("menu_contact") }}
                   </a>
                 </li>
-                <!-- <li>
-                  <select class="selectpicker">
-                    <option><a href="#">English</a></option>
-                    <option><a href="#">Русский</a></option>
-                    <option><a href="#">Қазақша</a></option>
-                  </select>
-                </li> -->
+                <li>
+                  <a href="#">
+                    <select class="selectpicker">
+                      <option v-lang.language="'EN'" @click="$language = 'en'"><a href="#" >English</a></option>
+                      <option v-lang.language="'RU'" @click="$language = 'ru'"><a href="#" >Русский</a></option>
+                      <option v-lang.language="'KZ'" @click="$language = 'kz'"><a href="#">Қазақша</a></option>
+                    </select>
+                  </a>
+                </li>
               </ul>
-            </div>
             <!-- Nav End -->
         <!-- </nav> -->
   <!-- ##### Header Area End ##### -->
 </template>
 
 <script>
-export default {
+export default{
   name: "Navbar",
 };
 </script>
